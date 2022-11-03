@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MCApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MCApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

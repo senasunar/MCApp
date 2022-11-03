@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="MCApp.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MCApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="Name:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25"></TextBlock>
+            <TextBlock Text="Surname:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="27"></TextBlock>
+            <TextBlock Text="Email:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="27"></TextBlock>
+            <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="27"></TextBlock>
+            <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="27"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" x:Name="newUser">
+            <TextBox x:Name="name" PlaceholderText="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"></TextBox>
+            <TextBox x:Name="surname" PlaceholderText="Surname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"></TextBox>
+            <TextBox x:Name="email" PlaceholderText="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"></TextBox>
+            <TextBox x:Name="username" PlaceholderText="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"></TextBox>
+            <PasswordBox x:Name="password" PlaceholderText="********" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"></PasswordBox>
+            <Button Content="Upload" Click="Button_Click" x:Name="myButton" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Page>
